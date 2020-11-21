@@ -26,6 +26,12 @@ app.get("/bitcoin/BTCSGD", async (req, res) => {
 	}
 });
 
+app.get("/", (req,res) => {
+    console.log("Hello")
+    res.status(200)
+    
+})
+
 app.listen(PORT, () => {
 	console.log(`App started on ${PORT}`);
 });
