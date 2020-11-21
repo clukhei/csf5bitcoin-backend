@@ -3,6 +3,8 @@ const fetch = require("node-fetch");
 const withQuery = require("with-query").default;
 require("dotenv").config();
 const app = express();
+const cors = require('cors')
+app.use(cors())
 
 const PORT = parseInt(process.argv[2]) || parseInt(process.env.PORT) || 3000;
 const CRYPTO_BASE_URL =
