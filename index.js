@@ -29,6 +29,7 @@ app.get("/bitcoin/BTCSGD", async (req, res) => {
 app.get("/", (req,res) => {
     console.log("Hello")
     res.status(200)
+    res.send("app is working fine")
     
 })
 
